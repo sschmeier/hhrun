@@ -5,12 +5,19 @@ NAME: hhrun.py
 
 DESCRIPTION
 ===========
-Parse a fasta-file and run hhsearch for each fasta-entry.
+## Information
+A wrapper for ``hhsearch`` (http://wwwuser.gwdg.de/~compbiol/data/hhsuite/releases/). Run ``hhsearch`` on each sequence entry in a fasta-file using multiple distributed concurrent processes.
+
+## Databases
+Databases for ``hhsearch`` can be downloaded at http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/.
 
 INSTALLATION
 ============
 
-
+1. Download the ``hhsuite`` at http://wwwuser.gwdg.de/~compbiol/data/hhsuite/releases/.
+2. Download databases at http://wwwuser.gwdg.de/~compbiol/data/hhsuite/databases/hhsuite_dbs/.
+3. Download or clone ``hhrun``.
+4. Run ``hhrun.py``.
 
 USAGE
 =====
@@ -18,10 +25,16 @@ USAGE
 VERSION HISTORY
 ===============
 
-0.1.0   2015/xx/xx    Initial version.
+0.1.1   2015/12/10    Minor documentation changes.
+0.1.0   2015/12/10    Initial version.
+
+LICENCE
+=======
+
+2015, copyright Sebastian Schmeier (s.schmeier@gmail.com), http://sschmeier.com
 """
-__version__='0.1.0'
-__date__='xxxx/xx/xx'
+__version__='0.1.1'
+__date__='2015/12/10'
 __email__='s.schmeier@gmail.com'
 __author__='Sebastian Schmeier'
 import sys, os, os.path, argparse, csv, collections, glob
